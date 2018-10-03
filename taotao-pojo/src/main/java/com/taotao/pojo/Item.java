@@ -12,11 +12,11 @@
 
 package com.taotao.pojo;
 
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * 商品表(TB_ITEM)
@@ -25,10 +25,12 @@ import javax.persistence.Table;
  * @version 1.0.0 2017-12-24
  */
 @Entity
-@Table(name = "TB_ITEM")
+@Table(name = "tb_item")
 public class Item implements java.io.Serializable {
     /** 版本号 */
     private static final long serialVersionUID = 5745309751649626943L;
+
+   //private String desc;
 
     /** 商品id，同时也是商品编号 */
     @Id

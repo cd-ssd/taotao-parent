@@ -12,11 +12,11 @@
 
 package com.taotao.pojo;
 
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * 用户表(TB_USER)
@@ -30,7 +30,7 @@ public class User implements java.io.Serializable {
     /** 版本号 */
     private static final long serialVersionUID = 7901146449608621691L;
 
-    /**  */
+    /** 主键id */
     @Id
     @Column(name = "ID", unique = true, nullable = false, length = 19)
     private Long id;

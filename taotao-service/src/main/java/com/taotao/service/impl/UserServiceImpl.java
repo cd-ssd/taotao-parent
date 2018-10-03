@@ -1,8 +1,9 @@
-package com.taotao.service;
+package com.taotao.service.impl;
 
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.taotao.mapper.UserMapper;
+import com.taotao.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /*
