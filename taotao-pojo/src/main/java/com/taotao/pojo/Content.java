@@ -20,7 +20,7 @@ import java.util.Date;
 
 /**
  * TB_CONTENT
- * 
+ *
  * @author bianj
  * @version 1.0.0 2017-12-24
  */
@@ -77,8 +77,8 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取
-     * 
-     * @return 
+     *
+     * @return
      */
     public Long getId() {
         return this.id;
@@ -86,7 +86,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置
-     * 
+     *
      * @param id
      */
     public void setId(Long id) {
@@ -95,7 +95,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取内容类目ID
-     * 
+     *
      * @return 内容类目ID
      */
     public Long getCategoryId() {
@@ -104,7 +104,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置内容类目ID
-     * 
+     *
      * @param categoryId
      *          内容类目ID
      */
@@ -114,7 +114,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取内容标题
-     * 
+     *
      * @return 内容标题
      */
     public String getTitle() {
@@ -123,7 +123,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置内容标题
-     * 
+     *
      * @param title
      *          内容标题
      */
@@ -133,7 +133,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取子标题
-     * 
+     *
      * @return 子标题
      */
     public String getSubTitle() {
@@ -142,7 +142,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置子标题
-     * 
+     *
      * @param subTitle
      *          子标题
      */
@@ -152,7 +152,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取标题描述
-     * 
+     *
      * @return 标题描述
      */
     public String getTitleDesc() {
@@ -161,7 +161,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置标题描述
-     * 
+     *
      * @param titleDesc
      *          标题描述
      */
@@ -171,7 +171,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取链接
-     * 
+     *
      * @return 链接
      */
     public String getUrl() {
@@ -180,7 +180,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置链接
-     * 
+     *
      * @param url
      *          链接
      */
@@ -190,7 +190,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取图片绝对路径
-     * 
+     *
      * @return 图片绝对路径
      */
     public String getPic() {
@@ -199,7 +199,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置图片绝对路径
-     * 
+     *
      * @param pic
      *          图片绝对路径
      */
@@ -209,7 +209,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取图片2
-     * 
+     *
      * @return 图片2
      */
     public String getPic2() {
@@ -218,7 +218,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置图片2
-     * 
+     *
      * @param pic2
      *          图片2
      */
@@ -228,7 +228,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取内容
-     * 
+     *
      * @return 内容
      */
     public String getContent() {
@@ -237,7 +237,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置内容
-     * 
+     *
      * @param content
      *          内容
      */
@@ -247,8 +247,8 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取
-     * 
-     * @return 
+     *
+     * @return
      */
     public Date getCreated() {
         return this.created;
@@ -256,7 +256,7 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置
-     * 
+     *
      * @param created
      */
     public void setCreated(Date created) {
@@ -265,8 +265,8 @@ public class Content implements java.io.Serializable {
 
     /**
      * 获取
-     * 
-     * @return 
+     *
+     * @return
      */
     public Date getUpdated() {
         return this.updated;
@@ -274,10 +274,28 @@ public class Content implements java.io.Serializable {
 
     /**
      * 设置
-     * 
+     *
      * @param updated
      */
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Content{" +
+                "id=" + id +
+                ", categoryId=" + categoryId +
+                ", title='" + title + '\'' +
+                ", subTitle='" + subTitle + '\'' +
+                ", titleDesc='" + titleDesc + '\'' +
+                ", url='" + url + '\'' +
+                ", pic='" + pic + '\'' +
+                ", pic2='" + pic2 + '\'' +
+                ", content='" + content + '\'' +
+                ", created=" + created +
+                ", updated=" + updated +
+                '}';
     }
 }

@@ -1,8 +1,9 @@
 package com.taotao.mapper;
 
 
-import org.springframework.boot.autoconfigure.web.ResourceProperties;
+import com.taotao.pojo.Content;
 import tk.mybatis.mapper.common.Mapper;
 
-public interface ContentMapper  extends Mapper<ResourceProperties> {
+@org.apache.ibatis.annotations.Mapper
+public interface ContentMapper  extends Mapper<Content> {
 }

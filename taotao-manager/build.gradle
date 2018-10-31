@@ -33,6 +33,7 @@ dependencies {
     //compile project(':taotao-service')
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
 
 
 
