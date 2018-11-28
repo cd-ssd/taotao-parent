@@ -34,7 +34,7 @@ public class ContentCategoryController {
 
     @RequestMapping("/rest/content/category/update")
     @ResponseBody
-    public String update(ContentCategory contentCategory){ //id ,  name
+    public String update(ContentCategory contentCategory){
         contentCategoryService.update(contentCategory);
         return "success";
     }
@@ -42,7 +42,7 @@ public class ContentCategoryController {
 
     @RequestMapping("/rest/content/category/delete")
     @ResponseBody
-    public String delete(ContentCategory contentCategory){ //id , parentId
+    public String delete(ContentCategory contentCategory){
         int result = contentCategoryService.delete(contentCategory);
         System.out.println("result==" + result);
         return "success";
