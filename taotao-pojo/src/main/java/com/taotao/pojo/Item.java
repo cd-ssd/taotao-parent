@@ -20,17 +20,17 @@ import java.util.Date;
 
 /**
  * 商品表(TB_ITEM)
- * 
+ *
  * @author bianj
  * @version 1.0.0 2017-12-24
  */
 @Entity
-@Table(name = "tb_item")
+@Table(name = "TB_ITEM")
 public class Item implements java.io.Serializable {
     /** 版本号 */
     private static final long serialVersionUID = 5745309751649626943L;
 
-   //private String desc;
+    //private String desc;
 
     /** 商品id，同时也是商品编号 */
     @Id
@@ -77,9 +77,15 @@ public class Item implements java.io.Serializable {
     @Column(name = "UPDATED", nullable = false)
     private Date updated;
 
+
+    public String[] getImages(){
+        return  image.split(",");
+    }
+
+
     /**
      * 获取商品id，同时也是商品编号
-     * 
+     *
      * @return 商品id
      */
     public Long getId() {
@@ -88,7 +94,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品id，同时也是商品编号
-     * 
+     *
      * @param id
      *          商品id
      */
@@ -98,7 +104,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品标题
-     * 
+     *
      * @return 商品标题
      */
     public String getTitle() {
@@ -107,7 +113,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品标题
-     * 
+     *
      * @param title
      *          商品标题
      */
@@ -117,7 +123,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品卖点
-     * 
+     *
      * @return 商品卖点
      */
     public String getSellPoint() {
@@ -126,7 +132,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品卖点
-     * 
+     *
      * @param sellPoint
      *          商品卖点
      */
@@ -136,7 +142,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品价格，单位为：分
-     * 
+     *
      * @return 商品价格
      */
     public Long getPrice() {
@@ -145,7 +151,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品价格，单位为：分
-     * 
+     *
      * @param price
      *          商品价格
      */
@@ -155,7 +161,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取库存数量
-     * 
+     *
      * @return 库存数量
      */
     public Integer getNum() {
@@ -164,7 +170,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置库存数量
-     * 
+     *
      * @param num
      *          库存数量
      */
@@ -174,7 +180,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品条形码
-     * 
+     *
      * @return 商品条形码
      */
     public String getBarcode() {
@@ -183,7 +189,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品条形码
-     * 
+     *
      * @param barcode
      *          商品条形码
      */
@@ -193,7 +199,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品图片
-     * 
+     *
      * @return 商品图片
      */
     public String getImage() {
@@ -202,7 +208,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品图片
-     * 
+     *
      * @param image
      *          商品图片
      */
@@ -212,7 +218,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取所属类目，叶子类目
-     * 
+     *
      * @return 所属类目
      */
     public Long getCid() {
@@ -221,7 +227,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置所属类目，叶子类目
-     * 
+     *
      * @param cid
      *          所属类目
      */
@@ -231,7 +237,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取商品状态，1-正常，2-下架，3-删除
-     * 
+     *
      * @return 商品状态
      */
     public Integer getStatus() {
@@ -240,7 +246,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置商品状态，1-正常，2-下架，3-删除
-     * 
+     *
      * @param status
      *          商品状态
      */
@@ -250,7 +256,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取创建时间
-     * 
+     *
      * @return 创建时间
      */
     public Date getCreated() {
@@ -259,7 +265,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置创建时间
-     * 
+     *
      * @param created
      *          创建时间
      */
@@ -269,7 +275,7 @@ public class Item implements java.io.Serializable {
 
     /**
      * 获取更新时间
-     * 
+     *
      * @return 更新时间
      */
     public Date getUpdated() {
@@ -278,11 +284,29 @@ public class Item implements java.io.Serializable {
 
     /**
      * 设置更新时间
-     * 
+     *
      * @param updated
      *          更新时间
      */
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", sellPoint='" + sellPoint + '\'' +
+                ", price=" + price +
+                ", num=" + num +
+                ", barcode='" + barcode + '\'' +
+                ", image='" + image + '\'' +
+                ", cid=" + cid +
+                ", status=" + status +
+                ", created=" + created +
+                ", updated=" + updated +
+                '}';
     }
 }

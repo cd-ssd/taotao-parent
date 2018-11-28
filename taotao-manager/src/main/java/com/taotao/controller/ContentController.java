@@ -27,41 +27,31 @@ public class ContentController {
 
     @GetMapping("/rest/content")
     public  Map<String , Object> list(int categoryId , int page , int rows){
-
         PageInfo<Content> pageInfo = contentService.list(categoryId, page, rows);
         Map<String , Object> map = new HashMap<>();
         map.put("total" , pageInfo.getTotal());
         map.put("rows" , pageInfo.getList());
-
         return  map;
     }
 
 
     @RequestMapping("/rest/content/edit")
     public Map<String ,Integer> edit(Content content){
-
         int result = contentService.edit(content);
-
         Map<String ,Integer> map = new HashMap<>();
         if(result > 0 ){
             map.put("status",200);
         }else{
             map.put("status" , 500);
         }
-
         return map;
     }
 
     @RequestMapping("/rest/content/delete")
     public  Map<String ,Integer> delete(String ids){
-
         System.out.println("ids=" + ids);
-
-
         int result =  contentService.delete(ids);
-
         System.out.println("result=" + result);
-
         Map<String ,Integer> map = new HashMap<>();
         if(result > 0 ){
             map.put("status" , 200);

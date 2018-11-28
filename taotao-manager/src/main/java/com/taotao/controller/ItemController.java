@@ -22,11 +22,8 @@ public class ItemController {
     @RequestMapping(value = "/rest/item" , method = RequestMethod.POST)
     @ResponseBody
     public String addItem(Item item , String desc){
-
-       int result =  itemService.addItem(item , desc);
-
+        int result =  itemService.addItem(item , desc);
         System.out.println("result===" + result);
-
         return "success";
     }
 

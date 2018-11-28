@@ -19,11 +19,8 @@ public class ItemCatController {
     @RequestMapping("/rest/item/cat")
     @ResponseBody
     public List<ItemCat> selectItemCat(@RequestParam(defaultValue = "0") long id){
-
         List<ItemCat> list = itemCatService.selectItemCatByParentId(id);
-
         System.out.println("list==" + list);
-
         return list;
     }
 }
