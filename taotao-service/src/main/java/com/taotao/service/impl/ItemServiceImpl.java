@@ -9,6 +9,8 @@ import com.taotao.pojo.Item;
 import com.taotao.pojo.ItemDesc;
 import com.taotao.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsMessagingTemplate;
+
 import java.util.Date;
 import java.util.List;
 
@@ -22,6 +24,8 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     private ItemDescMapper itemDescMapper;
 
+    @Autowired
+    private JmsMessagingTemplate jms;
     @Override
     public int addItem(Item item, String desc) {
         long id = (long) (System.currentTimeMillis() + Math.random() * 10000);
@@ -37,6 +41,9 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setCreated(new Date());
         itemDesc.setUpdated(new Date());
         itemDescMapper.insertSelective(itemDesc);
+
+        jms.convertAndSend("item-save",id);
+
         return result;
     }
 

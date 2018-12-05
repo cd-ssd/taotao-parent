@@ -32,6 +32,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
 
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-activemq', version: '1.5.10.RELEASE'
+
 
     //添加interface的依赖
     compile project(':taotao-interface')
