@@ -44,4 +44,5 @@ dependencies {
     compile project(':taotao-pojo')
     compile project(':taotao-service')
     compile project(':taotao-cart-interface')
+    compile project(':taotao-cart-service')
 }

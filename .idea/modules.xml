@@ -16,6 +16,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" group="taotao-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter.iml" group="taotao-intercepter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_main.iml" group="taotao-intercepter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_test.iml" group="taotao-intercepter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface.iml" group="taotao-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_main.iml" group="taotao-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_test.iml" group="taotao-interface" />

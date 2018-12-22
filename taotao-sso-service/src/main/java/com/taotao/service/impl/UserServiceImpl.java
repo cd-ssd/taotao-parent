@@ -11,9 +11,9 @@ import java.util.List;
 
 /*
  *  @项目名：  taotao-parent
- *  @包名：    com.itheima.service.impl
+ *  @包名：    com.taotao.service.impl
  *  @文件名:   UserServiceImpl
- *  @创建者:   xiaomi
+ *  @创建者:   chen
  *  @创建时间:  2018/10/24 18:47
  *  @描述：    TODO
  */
@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String selectUser(String ticket) {
 
-        String key = "iit_"+ticket;
+        String key = "tt_"+ticket;
 
         //这里要从redis里面获取用户的信息
         return redisTemplate.opsForValue().get(key);
