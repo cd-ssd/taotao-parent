@@ -23,8 +23,11 @@ public class IndexController {
     @Reference
     private ContentService contentService;
 
+    //登陆页面
     @RequestMapping("/page/{pageName}")
-    public String page(@PathVariable String pageName){
+    public String page(@PathVariable String pageName,String url,HttpServletRequest request){
+        request.setAttribute("url",url);
+
         return pageName;
     }
 

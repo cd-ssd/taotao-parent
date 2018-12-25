@@ -17,8 +17,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter.iml" group="taotao-intercepter" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_main.iml" group="taotao-intercepter" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-intercepter/taotao-intercepter_test.iml" group="taotao-intercepter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface.iml" group="taotao-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_main.iml" group="taotao-interface" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-interface/taotao-interface_test.iml" group="taotao-interface" />
@@ -31,6 +29,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper.iml" group="taotao-mapper" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_main.iml" group="taotao-mapper" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_test.iml" group="taotao-mapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_main.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_test.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service.iml" group="taotao-order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_main.iml" group="taotao-order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_test.iml" group="taotao-order-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-parent.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-parent-taotao-common.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-parent-taotao-common.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-parent-taotao-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-parent-taotao-common_main.iml" group="taotao-common" />

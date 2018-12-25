@@ -29,6 +29,20 @@ public class OrderItem implements java.io.Serializable {
     /** 版本号 */
     private static final long serialVersionUID = 4841794024304299165L;
 
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "id='" + id + '\'' +
+                ", itemId='" + itemId + '\'' +
+                ", orderId='" + orderId + '\'' +
+                ", num=" + num +
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                ", totalFee=" + totalFee +
+                ", picPath='" + picPath + '\'' +
+                '}';
+    }
+
     /**  */
     @Id
     @Column(name = "ID", unique = true, nullable = false, length = 20)
